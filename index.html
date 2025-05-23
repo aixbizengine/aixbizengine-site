@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AIX商業引擎｜AI for Business Execution</title>
+  <meta name="description" content="AIX商業引擎，專注企業AI自動化、流程優化與營收成長，專業AI顧問團隊助您打造企業新競爭力。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Roboto', 'Segoe UI', 'Arial', sans-serif;
+      background: linear-gradient(135deg, #f7fafc 60%, #e3f2fd 100%);
+      color: #1a2233;
+    }
+    header {
+      background: linear-gradient(90deg, #19233A 60%, #4dd0e1 100%);
+      color: #fff;
+      padding: 44px 0 32px 0;
+      text-align: center;
+      box-shadow: 0 4px 28px #21295c0d;
+      position: relative;
+    }
+    .logo-img {
+      display: block;
+      margin: 0 auto 22px auto;
+      width: 108px; height: 108px;
+      max-width: 28vw;
+      border-radius: 50%;
+      box-shadow: 0 2px 14px #0a274b22;
+      background: #fff;
+      object-fit: cover;
+    }
+    header h1 {
+      margin: 0 0 4px 0;
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      line-height: 1.18;
+    }
+    header p {
+      margin: 0 0 10px 0;
+      font-size: 1.18rem;
+      opacity: 0.95;
+      font-weight: 400;
+    }
+    .subtitle {
+      font-size: 1.05rem;
+      margin-top: 14px;
+      opacity: 0.85;
+      letter-spacing: 1.2px;
+    }
+    .yt-btn {
+      display: inline-block;
+      background: #FF0000;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.02rem;
+      border-radius: 26px;
+      padding: 10px 26px 10px 36px;
+      margin: 22px auto 0 auto;
+      text-decoration: none;
+      box-shadow: 0 2px 12px #FF000033;
+      position: relative;
+      transition: background 0.18s;
+      vertical-align: middle;
+    }
+    .yt-btn::before {
+      content: '';
+      display: inline-block;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png') no-repeat center center/contain;
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      left: 12px; top: 50%;
+      transform: translateY(-50%);
+      filter: drop-shadow(0 0 2px #fff6);
+    }
+    .yt-btn:hover {
+      background: #cc0000;
+    }
+    nav {
+      background: #232a3b;
+      text-align: center;
+      padding: 13px 0;
+      letter-spacing: 1px;
+      box-shadow: 0 1px 8px #19233A11;
+      position: sticky;
+      top: 0; z-index: 10;
+    }
+    nav a {
+      color: #f8fdff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      font-size: 1.07rem;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-bottom 0.2s;
+      padding-bottom: 2px;
+      display: inline-block;
+    }
+    nav a:hover, nav a.active {
+      color: #4dd0e1;
+      border-bottom: 2px solid #4dd0e1;
+    }
+    .container {
+      max-width: 1024px;
+      margin: 42px auto 38px auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 34px #4dd0e122;
+      padding: 36px 26px 44px 26px;
+    }
+    section {
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-size: 1.36rem;
+      color: #143353;
+      margin-top: 0;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      border-left: 5px solid #4dd0e1;
+      padding-left: 11px;
+      background: linear-gradient(90deg,#e3f2fd 60%,transparent 100%);
+      display: inline-block;
+    }
+    .service-list, .value-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+    .service-list li, .value-list li {
+      margin-bottom: 13px;
+      font-size: 1.07rem;
+      padding-left: 13px;
+      border-left: 4px solid #4dd0e1;
+      background: #f6fafd;
+      border-radius: 4px;
+      min-height: 31px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 1px 6px #4dd0e12b;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #4dd0e1 65%, #259ba6 100%);
+      color: #fff;
+      font-size: 1.09rem;
+      border-radius: 28px;
+      padding: 13px 36px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      box-shadow: 0 2px 12px #4dd0e155;
+      transition: background 0.2s, transform 0.15s;
+      letter-spacing: 1.2px;
+    }
+    .cta-btn:hover {
+      background: #259ba6;
+      transform: translateY(-2px) scale(1.03);
+    }
+    .contact-card {
+      background: linear-gradient(135deg, #e0f7fa 70%, #ffffff 100%);
+      border-radius: 12px;
+      padding: 19px 15px 11px 15px;
+      font-size: 1.11rem;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 16px #4dd0e14b;
+      color: #134257;
+      word-break: break-all;
+    }
+    .contact-card a {
+      color: #259ba6; font-weight: 600;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    .footer {
+      background: #21295c;
+      color: #fff;
+      text-align: center;
+      font-size: 0.98rem;
+      padding: 22px 0 13px 0;
+      margin-top: 48px;
+      letter-spacing: 1px;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 -2px 14px #21295c14;
+    }
+    .yt-footer-btn {
+      display: inline-block;
+      background: #FF0000;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.02rem;
+      border-radius: 22px;
+      padding: 8px 22px 8px 30px;
+      margin: 8px auto 0 auto;
+      text-decoration: none;
+      box-shadow: 0 2px 12px #FF000033;
+      position: relative;
+      transition: background 0.18s;
+      vertical-align: middle;
+    }
+    .yt-footer-btn::before {
+      content: '';
+      display: inline-block;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png') no-repeat center center/contain;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 7px; top: 50%;
+      transform: translateY(-50%);
+      filter: drop-shadow(0 0 2px #fff6);
+    }
+    .yt-footer-btn:hover {background:#cc0000;}
+    /* 行動裝置調整 */
+    @media (max-width: 800px) {
+      .container {padding: 13px 2vw;}
+      header h1 {font-size: 1.18rem;}
+      h2 {font-size: 1rem;}
+      .footer {font-size: 0.89rem;}
+      nav {font-size: 0.96rem;}
+      .logo-img {width: 82px; height: 82px; max-width: 32vw;}
+    }
+    @media (max-width: 480px) {
+      .container {padding: 5px 1vw;}
+      header {padding: 18px 0 8px 0;}
+      nav {padding: 7px 0;}
+      .cta-btn, .yt-btn {padding: 10px 10vw;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="LOGO.png" alt="AIX Biz Engine Logo" class="logo-img">
+    <h1>AIX商業引擎</h1>
+    <p>AI for Business Execution</p>
+    <div class="subtitle">AI驅動營收成長 × 流程自動化 × 商業顧問團隊</div>
+    <a class="yt-btn" href="https://www.youtube.com/@aixbizengine" target="_blank" rel="noopener">觀看 YouTube 頻道</a>
+  </header>
+  <nav>
+    <a href="#about">關於我們</a>
+    <a href="#services">服務項目</a>
+    <a href="#value">我們的優勢</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+  <div class="container">
+    <section id="about">
+      <h2>關於AIX商業引擎</h2>
+      <p>
+        <b>AIX商業引擎</b>專注於 <b>AI自動化</b>、<b>企業流程最佳化</b> 與 <b>營收成長</b>。我們結合AI產業顧問、數據專家與商業規劃師，為企業量身打造智慧自動化解決方案，協助各產業領航AI商業時代，提升競爭力與獲利。
+      </p>
+    </section>
+    <section id="services">
+      <h2>服務項目</h2>
+      <ul class="service-list">
+        <li>AI自動化流程規劃與導入（n8n/ChatGPT/BPM）</li>
+        <li>專屬AI Agent商業應用顧問</li>
+        <li>營收增長策略與數據決策分析</li>
+        <li>企業SOP優化、數位轉型規劃</li>
+        <li>AI工具選型／系統整合</li>
+      </ul>
+      <a class="cta-btn" href="#contact">立即預約免費顧問諮詢</a>
+    </section>
+    <section id="value">
+      <h2>我們的優勢</h2>
+      <ul class="value-list">
+        <li><b>專業團隊</b>：AI產業顧問 × 實戰經驗豐富</li>
+        <li><b>量身定制</b>：根據企業現況打造專屬解決方案</li>
+        <li><b>落地執行</b>：從策略到導入，陪你完成每一步</li>
+        <li><b>數據驅動</b>：精準營收成長，效益數據可衡量</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>聯絡我們</h2>
+      <div class="contact-card">
+        歡迎預約顧問服務或索取免費AI商業自動化評估。<br>
+        📧 Email: <a href="mailto:info@aixbizengine.com">info@aixbizengine.com</a><br>
+        或直接前往我們的 <a href="https://www.youtube.com/@aixbizengine" target="_blank" rel="noopener">YouTube 頻道</a> 了解更多案例！
+      </div>
+      <a class="cta-btn" href="mailto:info@aixbizengine.com">預約顧問 / 來信諮詢</a>
+    </section>
+  </div>
+  <div class="footer">
+    &copy; 2025 AIX Biz Engine｜AI for Business Execution.<br>
+    <a class="yt-footer-btn" href="https://www.youtube.com/@aixbizengine" target="_blank" rel="noopener">YouTube 頻道</a>
+  </div>
+</body>
+</html>
